@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Whats Chat</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="from">Developed by Shivaraj Padala</string>
+    <string name="love">Handcrafted with love</string>
+    <string name="other">Other</string>
+    <string name="share">Share</string>
+    <string name="feedback">Feedback</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="rate_us">Rate us</string>
+    <string name="about">About</string>
+    <string name="phone_number_input">Enter the phone number of the person you want to message on WhatsApp along with country code.</string>
+    <string name="save">Save</string>
+    <string name="message">Message</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="developer_email">shivarajpadala@gmail.com</string>
+    <string name="show_some_love">Show some love..!</string>
+    <string name="dialog_descrption">We\'re a tiny team working extremely hard to give you the best apps for free. Your 5-Star Rating is better than anything in the world..!</string>
+    <string name="later">Later</string>
+    <string name="rate_now">Rate now</string>
+    <string name="whatsapp_business">WhatsApp Business</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="choose_whatsapp">Choose WhatsApp</string>
+</resources>

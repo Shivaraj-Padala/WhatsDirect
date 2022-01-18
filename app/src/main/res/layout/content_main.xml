@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_number_input"
+        android:id="@+id/description"
+        android:textColor="@color/colorAccent"
+        android:textSize="15sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_below="@+id/description"
+        android:id="@+id/colorpicker_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edit_textbg"
+        android:layout_marginLeft="15dp">
+
+        <com.hbb20.CountryCodePicker
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:ccp_textSize="16sp"
+            android:gravity="center"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showNameCode="true"
+            android:id="@+id/cpp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/inputField"
+            android:background="@color/transparent"
+            android:layout_weight="2"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/colorpicker_layout"
+        android:layout_marginTop="10dp"
+        android:weightSum="2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/buttonsave"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/edit_textbg"
+        android:onClick="saveNum"
+        android:textAllCaps="false"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/save"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/button_bg"
+        android:onClick="msgOnWhatsApp"
+        android:textAllCaps="false"
+        android:layout_marginRight="5dp"
+        android:text="@string/message"
+        android:textColor="@color/colorLightWhite"/>
+    </LinearLayout>
+
+</RelativeLayout>
